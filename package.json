@@ -1,0 +1,30 @@
+{
+  "name": "jest1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^4.16.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^22.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilbalodi/bowlingtest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sahilbalodi/bowlingtest/issues"
+  },
+  "homepage": "https://github.com/sahilbalodi/bowlingtest#readme",
+  "description": ""
+}

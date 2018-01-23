@@ -33,14 +33,16 @@ function finalScore(score) {
       return true;
     }
   })
+  if(a.length === 0 )
+    return 0;
   sum = a.reduce((x,y) => x+y)
   return sum;
   //console.log(a);
 
 }
-console.log(finalScore([10,10,10,10,10,10,10,10,10,10,10,10]));
-console.log(finalScore([1,2,10,10,10,10,10,10,10,10,10,10,10]));
-console.log(finalScore([10,10,10,10,10,10,10,10,10,10,1,2]));
+
+
+console.log(finalScore([0,0,0,0,0,0,0,0,0,0]));
 console.log(finalScore([10,10,10,10,10,10,10,10,10,9,1,2]));
 
 
