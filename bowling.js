@@ -40,10 +40,4 @@ function finalScore(score) {
   //console.log(a);
 
 }
-
-
-console.log(finalScore([0,0,0,0,0,0,0,0,0,0]));
-console.log(finalScore([10,10,10,10,10,10,10,10,10,9,1,2]));
-
-
 module.exports = finalScore;

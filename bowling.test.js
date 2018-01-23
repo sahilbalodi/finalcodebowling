@@ -8,3 +8,6 @@ test('this should return the score 300 : ',function () {
 test('this should return the score 273 : ',function () {
   expect(a([1,2,10,10,10,10,10,10,10,10,10,10,10])).toBe(273);
 });
+test('this checks if the function returns a number : ',function () {
+  expect((typeof(a([10,10,10,10,10,10,10,10,10,9,1,2])) === typeof(1))).toBe(true);
+});
