@@ -1,11 +1,12 @@
 function finalScore(score) {
   let k = 0;
+  // test for negative and null
   let negative = score.filter(x => {
     if(x<0 || x === null)
       return true;
     return false;
   })
-  console.log(negative);
+  //console.log(negative);
   if(negative.length > 0)
   {
     if(negative[0] === null)
@@ -14,6 +15,13 @@ function finalScore(score) {
       return false;
     }
   }
+
+  if(score.length > 22 || score.length < 12)
+  {
+    return 'wronginput';
+  }
+  // basic function
+
   for (let i = 0; i < score.length; i++) {
     if(score[i] === 10)
     {
@@ -34,7 +42,7 @@ function finalScore(score) {
       break;
   }
   let sum= 0;
-  console.log(score);
+  //console.log(score);
   let a = score.filter(x => {
     if(x!== 0)
       return true;
@@ -49,9 +57,11 @@ function finalScore(score) {
   })
   if(a.length === 0 )
     return 0;
+  //test for invalid input
+
   sum = a.reduce((x,y) => x+y)
   return sum;
-  //console.log(a);
+
 
 }
 module.exports = finalScore;
