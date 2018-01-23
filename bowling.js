@@ -1,5 +1,15 @@
 function finalScore(score) {
   let k = 0;
+  let negative = score.filter(x => {
+    if(x<0)
+      return true;
+    return false;
+  })
+  console.log(negative);
+  if(negative.length > 0)
+  {
+    return null;
+  }
   for (let i = 0; i < score.length; i++) {
     if(score[i] === 10)
     {
